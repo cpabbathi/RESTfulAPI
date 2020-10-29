@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1142F75254A5D4D00DE1567 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142F74254A5D4D00DE1567 /* ApiKey.swift */; };
+		B1142F78254AE76E00DE1567 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142F77254AE76E00DE1567 /* Constants.swift */; };
+		B1142F7B254B2CB300DE1567 /* HolidayDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142F7A254B2CB300DE1567 /* HolidayDetail.swift */; };
 		B1ED73102548A4AA0049F6A4 /* CountryHolidaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED730F2548A4AA0049F6A4 /* CountryHolidaysApp.swift */; };
 		B1ED73122548A4AA0049F6A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED73112548A4AA0049F6A4 /* ContentView.swift */; };
 		B1ED73142548A4AB0049F6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ED73132548A4AB0049F6A4 /* Assets.xcassets */; };
 		B1ED73172548A4AB0049F6A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ED73162548A4AB0049F6A4 /* Preview Assets.xcassets */; };
+		B1ED73202548A8BB0049F6A4 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED731F2548A8BB0049F6A4 /* SearchBarView.swift */; };
+		B1ED7323254994820049F6A4 /* Holidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED7322254994820049F6A4 /* Holidays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1142F74254A5D4D00DE1567 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		B1142F77254AE76E00DE1567 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B1142F7A254B2CB300DE1567 /* HolidayDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayDetail.swift; sourceTree = "<group>"; };
 		B1ED730C2548A4AA0049F6A4 /* CountryHolidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryHolidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ED730F2548A4AA0049F6A4 /* CountryHolidaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryHolidaysApp.swift; sourceTree = "<group>"; };
 		B1ED73112548A4AA0049F6A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1ED73132548A4AB0049F6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1ED73162548A4AB0049F6A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1ED73182548A4AB0049F6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1ED731F2548A8BB0049F6A4 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		B1ED7322254994820049F6A4 /* Holidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holidays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				B1ED730F2548A4AA0049F6A4 /* CountryHolidaysApp.swift */,
 				B1ED73112548A4AA0049F6A4 /* ContentView.swift */,
+				B1ED731F2548A8BB0049F6A4 /* SearchBarView.swift */,
+				B1142F7A254B2CB300DE1567 /* HolidayDetail.swift */,
+				B1ED7322254994820049F6A4 /* Holidays.swift */,
+				B1142F77254AE76E00DE1567 /* Constants.swift */,
+				B1142F74254A5D4D00DE1567 /* ApiKey.swift */,
 				B1ED73132548A4AB0049F6A4 /* Assets.xcassets */,
 				B1ED73182548A4AB0049F6A4 /* Info.plist */,
 				B1ED73152548A4AB0049F6A4 /* Preview Content */,
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1142F75254A5D4D00DE1567 /* ApiKey.swift in Sources */,
 				B1ED73122548A4AA0049F6A4 /* ContentView.swift in Sources */,
+				B1ED73202548A8BB0049F6A4 /* SearchBarView.swift in Sources */,
+				B1ED7323254994820049F6A4 /* Holidays.swift in Sources */,
 				B1ED73102548A4AA0049F6A4 /* CountryHolidaysApp.swift in Sources */,
+				B1142F78254AE76E00DE1567 /* Constants.swift in Sources */,
+				B1142F7B254B2CB300DE1567 /* HolidayDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
