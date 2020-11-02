@@ -12,6 +12,7 @@
 		B1142F7B254B2CB300DE1567 /* HolidayDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142F7A254B2CB300DE1567 /* HolidayDetail.swift */; };
 		B1142F7E254B5E4D00DE1567 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142F7D254B5E4D00DE1567 /* Countries.swift */; };
 		B169CE2C254B624F00085836 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B169CE2B254B624F00085836 /* SettingsView.swift */; };
+		B19A555825508FEB003497D6 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19A555725508FEB003497D6 /* ApiKey.swift */; };
 		B1ED73102548A4AA0049F6A4 /* CountryHolidaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED730F2548A4AA0049F6A4 /* CountryHolidaysApp.swift */; };
 		B1ED73122548A4AA0049F6A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED73112548A4AA0049F6A4 /* ContentView.swift */; };
 		B1ED73142548A4AB0049F6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ED73132548A4AB0049F6A4 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		B1142F7A254B2CB300DE1567 /* HolidayDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayDetail.swift; sourceTree = "<group>"; };
 		B1142F7D254B5E4D00DE1567 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		B169CE2B254B624F00085836 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B19A555725508FEB003497D6 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		B1ED730C2548A4AA0049F6A4 /* CountryHolidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryHolidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ED730F2548A4AA0049F6A4 /* CountryHolidaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryHolidaysApp.swift; sourceTree = "<group>"; };
 		B1ED73112548A4AA0049F6A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				B1142F7D254B5E4D00DE1567 /* Countries.swift */,
 				B1142F77254AE76E00DE1567 /* Constants.swift */,
 				B1142F74254A5D4D00DE1567 /* ApiKey.swift */,
+				B19A555725508FEB003497D6 /* ApiKey.swift */,
 				B1ED73132548A4AB0049F6A4 /* Assets.xcassets */,
 				B1ED73182548A4AB0049F6A4 /* Info.plist */,
 				B1ED73152548A4AB0049F6A4 /* Preview Content */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19A555825508FEB003497D6 /* ApiKey.swift in Sources */,
 				B1142F75254A5D4D00DE1567 /* ApiKey.swift in Sources */,
 				B1ED73122548A4AA0049F6A4 /* ContentView.swift in Sources */,
 				B1ED73202548A8BB0049F6A4 /* SearchBarView.swift in Sources */,
