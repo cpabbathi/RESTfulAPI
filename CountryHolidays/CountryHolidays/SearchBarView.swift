@@ -21,7 +21,6 @@ struct SearchBarView: UIViewRepresentable {
         let searchBar = UISearchBar()
         searchBar.placeholder = "Enter the search string"
         searchBar.delegate = context.coordinator
-        
         return searchBar
     }
     
@@ -38,7 +37,12 @@ struct SearchBarView: UIViewRepresentable {
                 
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             guard let searchStringinBar = searchBar.text else { return }
+            
             parent.searchString = searchStringinBar
+        }
+        
+        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            parent.hideKeyboard()
         }
     }
 }

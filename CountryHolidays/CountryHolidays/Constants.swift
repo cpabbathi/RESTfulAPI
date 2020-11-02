@@ -15,4 +15,13 @@ struct Constants {
             "\(month.prefix(1))".uppercased()
         }
     }
+    
+    static let maxYear = 2049
+    static let minYear = 1920
+    
+    static let userDefaultsCountryCode = "countryCode"
+    static let userDefaultsCalendarYear = "calendarYear"
+    
+    static let countryCode = String(Locale.current.regionCode?.suffix(2) ?? "US")
+    static let currentCalendarYear = String(Calendar.current.component(.year, from: Date()))
 }

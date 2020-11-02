@@ -10,8 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State var searchString = ""
+    
     @State private var holidays = [Holiday]()
+    @State private var countries = [Country]()
+    
     @State private var cancellable: AnyCancellable?
+    
+    @State private var showSettings = false
+    
+    @AppStorage(Constants.userDefaultsCountryCode) private var countryCode:String = Constants.countryCode
+    @AppStorage(Constants.userDefaultsCalendarYear) private var calendarYear: String = Constants.currentCalendarYear
+    
+    @Environment(\.presentationMode) var presentationMode
     
     let fontSize: CGFloat = 15
     
@@ -19,7 +29,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 SearchBarView(searchString: $searchString)
-                
+                    
                 ScrollViewReader { proxy in
                     List {
                         ForEach(1 ..< 13, id: \.self) { monthID in
@@ -62,14 +72,35 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Holidays")
+            .onChange(of: countryCode, perform: { value in
+                loadHolidays()
+            })
+            .onChange(of: calendarYear, perform: { value in
+                loadHolidays()
+            })
+            .sheet(isPresented: $showSettings, content: {
+                SettingsView()
+            })
+            .navigationTitle("Holidays in \(countryCode)")
+            .toolbar {
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                    Button {
+                        hideKeyboard()
+                        showSettings = true
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+                }
+            }
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear(perform: loadHolidays)
+            .onAppear {
+                loadHolidays()
+            }
         }
     }
     
     func loadHolidays() {
-        guard let url = URL(string: "https://calendarific.com/api/v2/holidays?api_key=\(API_KEY)&country=IN&year=2020")
+        guard let url = URL(string: "https://calendarific.com/api/v2/holidays?api_key=\(API_KEY)&country=\(countryCode)&year=\(calendarYear)")
         else {
             print("URL is not legitimate")
             return
